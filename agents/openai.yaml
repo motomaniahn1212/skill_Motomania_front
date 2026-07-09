@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motomania Frontend"
+  short_description: "Mide y alinea UI Motomania Web"
+  default_prompt: "Usa $motomaniafrontend para medir una pantalla de Motomania Web contra el contrato de cuadricula, corregir la alineacion y validar con evidencia."

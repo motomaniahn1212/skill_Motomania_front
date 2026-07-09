@@ -1,0 +1,34 @@
+body::before {
+  background-image:
+    linear-gradient(to right, rgba(227, 17, 17, 0.24) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(227, 17, 17, 0.16) 1px, transparent 1px),
+    linear-gradient(to right, rgba(17, 24, 39, 0.14) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.11) 1px, transparent 1px);
+  background-size: 8px 8px, 8px 8px, 32px 32px, 32px 32px;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 2147483646;
+}
+
+body::after {
+  background: rgba(17, 24, 39, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 4px;
+  color: white;
+  content: "Motomania UI grid: 8px / major 32px";
+  font: 11px/1.2 Inter, Arial, sans-serif;
+  left: 8px;
+  letter-spacing: 0;
+  padding: 5px 7px;
+  pointer-events: none;
+  position: fixed;
+  top: 8px;
+  z-index: 2147483647;
+}
+
+[data-mm-audit-outline="1"] :is(.top, .module-group-sidebar, aside, main, h1, .cf-card, .card, .admin-kpi, .cf-kpi, button, .cf-btn, .btn, table) {
+  outline: 1px solid rgba(227, 17, 17, 0.42) !important;
+  outline-offset: -1px !important;
+}
