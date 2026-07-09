@@ -10,11 +10,14 @@ Skill de Codex para auditar, medir y corregir pantallas frontend de Motomania We
 
 ```powershell
 npm install
+npx playwright install chromium
 ```
 
 4. Verificar que exista `SKILL.md`, `agents/openai.yaml`, `references/`, `scripts/` y `assets/`.
 
 Si se necesita recuperar exactamente la instalacion que existia antes del respaldo, usar `_backups/motomaniafrontend-full-backup-2026-07-08.zip`.
+
+Nota: los navegadores descargados por Playwright viven fuera de esta skill, normalmente en `C:\Users\luis1\AppData\Local\ms-playwright`. No se versionan como archivos normales del repo porque son binarios grandes y regenerables. Despues de restaurar la skill, `npx playwright install chromium` los vuelve a descargar.
 
 ## Contenido principal
 
